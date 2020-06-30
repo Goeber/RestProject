@@ -1,0 +1,26 @@
+GET http://localhost:8080/employees/
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{"id": "GOB","zuname": "Göber","vorname": "Lukas"}
+
+###
+GET http://localhost:8080/employees/totalworkingtime/SCMI
+
+###
+GET http://localhost:8080/employees/activites/SCMI/2019-01-01/2019-12-20
+
+###
+DELETE http://localhost:8080/employees/GOB
+
+###
+POST http://localhost:8080/activities
+Content-Type: application/json
+
+{"beschreibung":"test","datum":"2019-04-02","dauer":"20","mitarbeiter":"SCMI"}
+
+###
+GET http://localhost:8080/activities/2019-05-17
